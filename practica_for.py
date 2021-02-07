@@ -6,3 +6,20 @@ for i in range(0, pyramid_width):
     for k in range(0, 2 * i +1):
         print("0", end="")
     print("")
+print("----------------------------------------")
+# Funcion for, anidado. Generacion de flecha con if
+picture = [
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+]
+
+for row in picture:
+    for pixel in row:
+        if (pixel == 1):
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print("")
