@@ -1,4 +1,5 @@
-pyramid_width = 10
+# Anidado de funciones for. Generacion de triangulo con.
+pyramid_width = 15
 for i in range(0, pyramid_width):
     for j in range(0, pyramid_width - i):
         print(" ", end="")
