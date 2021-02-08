@@ -15,7 +15,6 @@ picture = [
     [0, 0, 0, 1, 0, 0, 0],
     [0, 0, 0, 1, 0, 0, 0]
 ]
-
 for row in picture:
     for pixel in row:
         if (pixel == 1):
@@ -23,3 +22,23 @@ for row in picture:
         else:
             print(" ", end="")
     print("")
+print("----------------------------------------")
+
+# Def, Funcion for, anidado. Generacion de flecha con if. Repeticion mediante definicion
+picture = [
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+]
+def show_tree():
+    for image in picture:
+        for pixel in image:
+            if (pixel == 1):
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print("")
+show_tree()
+show_tree()
